@@ -1,0 +1,13 @@
+{
+  "name": "MilitaryNerf",
+  "version": "0.0.1",
+  "title": "Military Rebalance",
+  "author": "garrotte",
+  "description": "Decreasing too huge endgame bonuses for character to make vehicles worth building",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1.41",
+    "? RampantArsenal",
+    "TurretPod",
+    "! bobvehicleequipment"
+  ]
+}

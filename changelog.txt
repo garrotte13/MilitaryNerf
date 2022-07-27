@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2022-07-?
+  Features:
+        - Replaced half of electronic circuits by silica in repair pack.
+        - Added a toolbelt2 tech to give more slots for BZ resources.
+        - Changed titanium and copper balance in LDS for BZ resources.
+        - Added K2 sound for RI air filter buildings.
