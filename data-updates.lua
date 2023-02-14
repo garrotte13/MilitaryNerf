@@ -26,6 +26,7 @@ for _, legs in pairs(data.raw["movement-bonus-equipment"]) do
 end
 data.raw.capsule["raw-fish"].capsule_action.attack_parameters.cooldown = 60
 
+data.raw.car["tank"].terrain_friction_modifier = 0.09
 
 if mods["RampantArsenal"] then
     data.raw.capsule["healing-capsule-rampant-arsenal"].capsule_action.attack_parameters.cooldown = 60
@@ -139,7 +140,7 @@ data:extend({
         {
           {"energy-shield-equipment", 2},
           {"effectivity-module", 3},
-          {"low-density-structure", 5},
+          mods["bztitanium"] and {"titanium-plate", 20} or {"low-density-structure", 5},
         },
         result = "mn-energy-shield-mk1-equipment"
       },
