@@ -1,6 +1,18 @@
 
 --require("prototypes/technologies")
 
+data:extend(
+{
+  {
+    type = "virtual-signal",
+    name = "biter-built-warning",
+    icon = "__MilitaryNerf__/graphics/biter-warning.png",
+    icon_size = 64
+  }
+}
+)
+
+
 data.raw["spider-vehicle"]["spidertron"].energy_source = {
     type = "burner",
     emissions_per_minute = 16,

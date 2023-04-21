@@ -6,3 +6,4 @@ Date: 2022-07-?
         - Added a toolbelt2 tech to give more slots for BZ resources.
         - Changed titanium and copper balance in LDS for BZ resources.
         - Added K2 sound for RI air filter buildings.
+        - Biters expansion in _visible only_ zones detection. Icon taken from mod https://mods.factorio.com/mod/biterexpansionnotifier
