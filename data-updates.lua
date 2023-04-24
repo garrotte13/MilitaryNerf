@@ -17,7 +17,7 @@ for _, shield in pairs(data.raw["energy-shield-equipment"]) do
 end
 
 for _, legs in pairs(data.raw["movement-bonus-equipment"]) do
-    legs.movement_bonus = legs.movement_bonus * (2/3)
+    legs.movement_bonus = legs.movement_bonus / 2
     if legs.energy_consumption then
         energy = string.match(legs.energy_consumption, "(%d+)kW")
         energyNum = tonumber(energy) * 2.0
@@ -26,7 +26,7 @@ for _, legs in pairs(data.raw["movement-bonus-equipment"]) do
 end
 data.raw.capsule["raw-fish"].capsule_action.attack_parameters.cooldown = 60
 
---data.raw.car["tank"].terrain_friction_modifier = 0.09
+
 
 if mods["RampantArsenal"] then
     data.raw.capsule["healing-capsule-rampant-arsenal"].capsule_action.attack_parameters.cooldown = 60
