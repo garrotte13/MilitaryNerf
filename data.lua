@@ -16,15 +16,15 @@ data:extend(
 data.raw["spider-vehicle"]["spidertron"].energy_source = {
     type = "burner",
     emissions_per_minute = 16,
-    effectivity = 0.85,
+    effectivity = 0.75,
     render_no_power_icon = true,
     render_no_network_icon = false,
     fuel_inventory_size = 2,
     burnt_inventory_size = 2,
     fuel_category = "nuclear",
   }
-  data.raw["spider-vehicle"]["spidertron"].movement_energy_consumption = "8MW"
-  data.raw["spider-vehicle"]["spidertron"].weight = 9000
+  data.raw["spider-vehicle"]["spidertron"].movement_energy_consumption = "39MW"
+  data.raw["spider-vehicle"]["spidertron"].weight = 12000
   data.raw["spider-vehicle"]["spidertron"].braking_force = 0.05
   data.raw["spider-vehicle"]["spidertron"].friction_force = 0.05
 
