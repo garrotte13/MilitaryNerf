@@ -26,7 +26,15 @@ for _, legs in pairs(data.raw["movement-bonus-equipment"]) do
 end
 data.raw.capsule["raw-fish"].capsule_action.attack_parameters.cooldown = 60
 
-
+local t_recipe = data.raw.recipe["rocket"].ingredients
+for i, component in pairs(t_recipe) do
+  for _, value in pairs(component) do
+    if value == "electronic-circuit" then
+      t_recipe[i] = {type="item", name="advanced-circuit", amount=1}
+      break
+    end
+  end
+end
 
 if mods["RampantArsenal"] then
     data.raw.capsule["healing-capsule-rampant-arsenal"].capsule_action.attack_parameters.cooldown = 60
