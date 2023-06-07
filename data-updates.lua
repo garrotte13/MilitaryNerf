@@ -24,6 +24,10 @@ for _, legs in pairs(data.raw["movement-bonus-equipment"]) do
         legs.energy_consumption = energyNum .. "kW"
     end
 end
+
+local laser_def = data.raw["active-defense-equipment"]["personal-laser-defense-equipment"]
+laser_def.attack_parameters.ammo_type.energy_consumption = "120kJ"
+
 data.raw.capsule["raw-fish"].capsule_action.attack_parameters.cooldown = 60
 
 local t_recipe = data.raw.recipe["rocket"].ingredients
